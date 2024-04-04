@@ -10,7 +10,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderTitle = styled.h1`
   font-family: "Kalnia", serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 48px;
   margin-top: 20px;
   color: #ffffff;
@@ -18,7 +18,7 @@ export const HeaderTitle = styled.h1`
 
 export const NavigationContainer = styled.div`
   display: flex;
-  margin-left: 450px;
+  margin-left: 500px;
   margin-right: 170px;
 `;
 
