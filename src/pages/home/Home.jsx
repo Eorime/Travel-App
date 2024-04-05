@@ -8,12 +8,13 @@ import {
   OfferButton,
   SecondaryParagraph,
 } from "./style";
-import Background from "../../assets/images/image 1.png";
+import HomeIntro from "../../components/homeIntro/HomeIntro";
 
 const Home = () => {
   return (
     <HomeContainer>
       <Header />
+      <HomeIntro />
     </HomeContainer>
   );
 };

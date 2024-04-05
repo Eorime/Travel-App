@@ -13,7 +13,6 @@ import {
   UserImage,
 } from "./style";
 import { routes } from "../../constants/routes";
-import VectorImage from "../../assets/images/Vector.png";
 import BurgerImg from "../../assets/images/burger.png";
 import CloseImage from "../../assets/images/close.png";
 
@@ -28,9 +27,9 @@ const Header = () => {
       <NavigationContainer>
         <Burger onClick={clickHandle}>
           {click ? (
-            <Close src={CloseImage} />
+            <Close src={CloseImage} style={{ zIndex: "1500" }} />
           ) : (
-            <BurgerImage src={BurgerImg} style={{ zIndex: "1000" }} />
+            <BurgerImage src={BurgerImg} />
           )}
         </Burger>
         {click ? (

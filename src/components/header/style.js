@@ -12,19 +12,20 @@ export const HeaderContainer = styled.div`
   z-index: 1;
   transition: 0.3s ease-in;
   color: #ffffff;
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 800px) {
     max-width: 100%;
   }
 `;
 
 export const HeaderTitle = styled.h1`
-  font-size: 24px;
+  font-size: 48px;
   font-family: "Kalnia", serif;
-  margin-left: 2.5rem;
+  margin-left: 170px;
   font-weight: 450;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 800px) {
     font-size: 24px;
+    margin-left: 30px;
   }
 `;
 
@@ -37,7 +38,7 @@ export const NavigationContainer = styled.div`
   height: 100%;
   padding: 0 1rem;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 800px) {
     max-width: 100%;
   }
 `;
@@ -54,10 +55,11 @@ export const UserImage = styled.img``;
 export const Burger = styled.div`
   display: flex;
   position: fixed;
-  right: 0;
+  right: 30px;
   width: 32px;
   height: 32px;
-  @media screen and (max-width: 1920px) {
+  margin-top: -50px;
+  @media screen and (max-width: 800px) {
     display: block;
   }
 `;
@@ -69,11 +71,11 @@ export const BurgerMenu = styled.ul`
   display: flex;
   position: relative;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 800px) {
     padding-left: 28px;
     position: fixed;
     right: 2.5rem;
-    top: 0.555rem;
+    top: 8px;
     flex-direction: column;
     background-color: #ffffff;
     color: #424244;
@@ -95,8 +97,9 @@ export const MenuItem = styled.li`
   font-size: 18px;
   margin-right: 40px;
   color: #424244;
+  z-index: 1000;
 
-  @media screen and (max-width: 1920px) {
+  @media screen and (max-width: 800px) {
     margin: ;
   }
 `;
@@ -104,5 +107,5 @@ export const MenuItem = styled.li`
 export const Close = styled.img`
   width: 18px;
   height: 18px;
-  z-index: 1000;
+  z-index: 1200;
 `;
