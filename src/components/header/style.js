@@ -2,42 +2,62 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin-left: 170px;
   position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 60; //105
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  color: #ffffff;
+  @media screen and (max-width: 1920px) {
+    max-width: 100%;
+  }
 `;
 
 export const HeaderTitle = styled.h1`
+  font-size: 24px;
   font-family: "Kalnia", serif;
-  font-weight: 400;
-  font-size: 48px;
-  margin-top: 20px;
-  color: #ffffff;
 `;
 
 export const NavigationContainer = styled.div`
   display: flex;
-  margin-left: 500px;
-  margin-right: 170px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: auto;
+  height: 100%;
+  padding: 0 1rem;
+  @media screen and (max-width: 1920px) {
+    max-width: 100%;
+  }
 `;
 
-export const NavigateElement = styled.p`
-  font-weight: 300;
-  margin-left: 40px;
-  font-size: 28px;
-  color: #ffffff;
-  margin-top: 36px;
-`;
+export const NavigateElement = styled.p``;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
 `;
 
-export const UserImage = styled.img`
-  margin-left: 40px;
-  width: 25px;
-  height: 30px;
-  margin-top: 37.5px;
+export const UserImage = styled.img``;
+
+export const Burger = styled.div`
+  display: flex;
+`;
+
+export const BurgerImage = styled.img`
+  width: 32px;
+  height: 32px;
+`;
+
+export const BurgerMenu = styled.ul`
+  list-style-type: none;
+  display: flex;
+`;
+
+export const MenuItem = styled.li`
+  padding: 1rem;
+  font-weight: 500;
 `;
