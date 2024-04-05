@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 220px;
+  position: relative;
 
   &: before {
     content: "";
     background-image: url(${require("../../assets/images/image1.png")});
     position: absolute;
-    height: 100%;
+    height: 885px;
     width: 100%;
     top: 0;
     left: 0;
@@ -19,14 +20,17 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  position: relative;
-  margin-top: 350px;
+  position: absolute;
+  margin-top: 230px;
   text-align: center;
   color: #ffffff;
+  left: 800px;
   font-weight: 300;
 
   @media screen and (max-width: 800px) {
-    margin-top: 65px;
+    margin-top: 45px;
+    position-absolute;
+    left: 160px;
   }
 `;
 
