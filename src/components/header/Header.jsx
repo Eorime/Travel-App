@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Burger,
   BurgerImage,
   BurgerMenu,
+  Close,
   HeaderContainer,
   HeaderTitle,
   MenuItem,
@@ -14,38 +15,52 @@ import {
 import { routes } from "../../constants/routes";
 import VectorImage from "../../assets/images/Vector.png";
 import BurgerImg from "../../assets/images/burger.png";
+import CloseImage from "../../assets/images/close.png";
 
 const Header = () => {
+  const [click, setClick] = useState(false);
+
+  const clickHandle = () => setClick(!click);
+
   return (
     <HeaderContainer>
       <HeaderTitle>ExploreEra</HeaderTitle>
       <NavigationContainer>
-        <Burger>
-          <BurgerImage src={BurgerImg} />
+        <Burger onClick={clickHandle}>
+          {click ? (
+            <Close src={CloseImage} />
+          ) : (
+            <BurgerImage src={BurgerImg} style={{ zIndex: "1000" }} />
+          )}
         </Burger>
-        <BurgerMenu>
-          <StyledLink to={routes.signIn}>
-            <MenuItem>Sign In</MenuItem>
-          </StyledLink>
-          <StyledLink to={routes.signUp}>
-            <MenuItem>Sign Up</MenuItem>
-          </StyledLink>
-          <StyledLink to={routes.home}>
-            <MenuItem>Home</MenuItem>
-          </StyledLink>
-          <StyledLink>
-            <MenuItem>About Us</MenuItem>
-          </StyledLink>
-          <StyledLink>
-            <MenuItem>Blogs</MenuItem>
-          </StyledLink>
-          <StyledLink to={routes.services}>
-            <MenuItem>Our Services</MenuItem>
-          </StyledLink>
-          <StyledLink>
-            <MenuItem>Our Offers</MenuItem>
-          </StyledLink>
-        </BurgerMenu>
+        {click ? (
+          <BurgerMenu active={click}>
+            <StyledLink style={{ marginTop: "10px" }} to={routes.signIn}>
+              <MenuItem>Sign In</MenuItem>
+            </StyledLink>
+            <StyledLink to={routes.signUp}>
+              <MenuItem>Sign Up</MenuItem>
+              <br></br>
+            </StyledLink>
+            <StyledLink to={routes.home}>
+              <MenuItem>Home</MenuItem>
+            </StyledLink>
+            <StyledLink>
+              <MenuItem>About Us</MenuItem>
+            </StyledLink>
+            <StyledLink>
+              <MenuItem>Blogs</MenuItem>
+            </StyledLink>
+            <StyledLink to={routes.services}>
+              <MenuItem>Our Services</MenuItem>
+            </StyledLink>
+            <StyledLink>
+              <MenuItem style={{ marginBottom: "35px" }}>Our Offers</MenuItem>
+            </StyledLink>
+          </BurgerMenu>
+        ) : (
+          <BurgerMenu></BurgerMenu>
+        )}
       </NavigationContainer>
     </HeaderContainer>
   );
