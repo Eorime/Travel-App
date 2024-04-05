@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 945px;
+  margin-top: 10px;
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-left: 170px;
   margin-right: 170px;
 
@@ -11,7 +11,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -20,18 +20,26 @@ export const Container = styled.div`
 export const MainTitle = styled.h1`
   font-size: 40px;
   color: #424244;
+  margin-top: 700px;
+  margin-left: 190px;
 
   @media screen and (max-width: 800px) {
     font-size: 22px;
+    margin-top: 10px;
+    margin-left: 55px;
   }
 `;
 
 export const TheMainParagraph = styled.p`
   font-size: 20px;
   color: #424244;
+  margin-left: 190px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
+    margin-left: 55px;
+    margin-top: 15px;
   }
 `;
 

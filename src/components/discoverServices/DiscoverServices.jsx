@@ -15,51 +15,53 @@ import {
 
 const DiscoverServices = () => {
   return (
-    <Container>
+    <>
       <MainTitle>Discover Our Services</MainTitle>
       <TheMainParagraph>
         ExploreEra provides a one-stop solution for individuals seeking
         well-planned journeys. These services include expert advice on
-        destination selection, flight and accommodation bookings, and customized
-        itineraries to individual preferences.
+        destination selection, flight and accommodation <br></br> bookings, and
+        customized itineraries to individual preferences.
       </TheMainParagraph>
-      <ElementContainer>
-        <ImageContainer src={BookFlights} />
-        <ParagraphTitle>Book Flight</ParagraphTitle>
-        <Paragraph>
-          Book memorable journey with our flight booking services! we're
-          thrilled to present you <br></br>flight options to suit your travel
-          needs.
-        </Paragraph>
-      </ElementContainer>
-      <ElementContainer>
-        <ImageContainer src={BookHotels} />
-        <ParagraphTitle>Book Hotels</ParagraphTitle>
-        <Paragraph>
-          Book memorable journey with our flight booking <br></br> services!
-          we're thrilled to present you flight <br></br> options to suit your
-          travel needs.
-        </Paragraph>
-      </ElementContainer>
-      <ElementContainer>
-        <ImageContainer src={BookCruises} />
-        <ParagraphTitle>Book Cruises</ParagraphTitle>
-        <Paragraph>
-          Book memorable journey with our flight booking <br></br> services!
-          we're thrilled to present you flight <br></br> options to suit your
-          travel needs.
-        </Paragraph>
-      </ElementContainer>
-      <ElementContainer>
-        <ImageContainer src={BookVacation} />
-        <ParagraphTitle>Book Family Vacations</ParagraphTitle>
-        <Paragraph>
-          Book memorable journey with our flight booking <br></br> services!
-          we're thrilled to present you flight <br></br> options to suit your
-          travel needs.
-        </Paragraph>
-      </ElementContainer>
-    </Container>
+      <Container>
+        <ElementContainer>
+          <ImageContainer src={BookFlights} />
+          <ParagraphTitle>Book Flight</ParagraphTitle>
+          <Paragraph>
+            Book memorable journey with our flight booking services! we're
+            thrilled to present you <br></br>flight options to suit your travel
+            needs.
+          </Paragraph>
+        </ElementContainer>
+        <ElementContainer>
+          <ImageContainer src={BookHotels} />
+          <ParagraphTitle>Book Hotels</ParagraphTitle>
+          <Paragraph>
+            Book memorable journey with our flight booking <br></br> services!
+            we're thrilled to present you flight <br></br> options to suit your
+            travel needs.
+          </Paragraph>
+        </ElementContainer>
+        <ElementContainer>
+          <ImageContainer src={BookCruises} />
+          <ParagraphTitle>Book Cruises</ParagraphTitle>
+          <Paragraph>
+            Book memorable journey with our flight booking <br></br> services!
+            we're thrilled to present you flight <br></br> options to suit your
+            travel needs.
+          </Paragraph>
+        </ElementContainer>
+        <ElementContainer>
+          <ImageContainer src={BookVacation} />
+          <ParagraphTitle>Book Family Vacations</ParagraphTitle>
+          <Paragraph>
+            Book memorable journey with our flight booking <br></br> services!
+            we're thrilled to present you flight <br></br> options to suit your
+            travel needs.
+          </Paragraph>
+        </ElementContainer>
+      </Container>
+    </>
   );
 };
 
