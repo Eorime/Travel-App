@@ -9,6 +9,11 @@ export const Container = styled.div`
   margin: 0 auto;
   margin-top: 230px;
   border-radius: 10px;
+
+  @media screen and (max-width: 800px) {
+    width: 340px;
+    height: 850px;
+  }
 `;
 
 export const Form = styled.form`
@@ -32,6 +37,12 @@ export const Input = styled.input`
     outline: none;
     border: solid 1px #c85100;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+  }
 `;
 
 export const SignUpButton = styled.button`
@@ -49,6 +60,12 @@ export const SignUpButton = styled.button`
   &: hover {
     cursor: pointer;
     background-color: #c85100;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 310px;
+    height: 50px;
+    font-size: 16px;
   }
 `;
 
@@ -69,6 +86,11 @@ export const ImageUploadIcon = styled.img`
   &: hover {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export const UploadedImage = styled.img`
@@ -78,4 +100,9 @@ export const UploadedImage = styled.img`
   width: 100px;
   height: 100px;
   border-radius: 50%;
+
+  @media screen and (max-width: 800px) {
+    width: 50px;
+    height: 50px;
+  }
 `;

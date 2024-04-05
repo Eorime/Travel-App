@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #ffffff;
+  width: 340px;
+  height: 490px;
   width: 540px;
   height: 555px;
   display: flex;
@@ -9,6 +11,12 @@ export const Container = styled.div`
   margin: 0 auto;
   margin-top: 230px;
   border-radius: 10px;
+
+  @media screen and (max-width: 800px) {
+    width: 340px;
+    height: 490px;
+    justify-content: center;
+  }
 `;
 
 export const Form = styled.form`
@@ -32,6 +40,12 @@ export const Input = styled.input`
     outline: none;
     border: solid 1px #c85100;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+  }
 `;
 
 export const SubmitButton = styled.button`
@@ -49,6 +63,12 @@ export const SubmitButton = styled.button`
   &: hover {
     cursor: pointer;
     background-color: #c85100;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 310px;
+    height: 50px;
+    font-size: 16px;
   }
 `;
 
