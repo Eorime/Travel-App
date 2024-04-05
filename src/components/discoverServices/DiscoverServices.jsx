@@ -28,9 +28,9 @@ const DiscoverServices = () => {
           <ImageContainer src={BookFlights} />
           <ParagraphTitle>Book Flight</ParagraphTitle>
           <Paragraph>
-            Book memorable journey with our flight booking services! we're
-            thrilled to present you <br></br>flight options to suit your travel
-            needs.
+            Book memorable journey with our flight booking <br></br>services!
+            we're thrilled to present you <br></br>flight options to suit your
+            travel needs.
           </Paragraph>
         </ElementContainer>
         <ElementContainer>
