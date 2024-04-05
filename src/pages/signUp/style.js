@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #ffffff;
   width: 540px;
-  height: 555px;
+  height: 972px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -34,7 +34,7 @@ export const Input = styled.input`
   }
 `;
 
-export const SubmitButton = styled.button`
+export const SignUpButton = styled.button`
   background-color: #ff6700;
   font-size: 20px;
   color: #ffffff;
