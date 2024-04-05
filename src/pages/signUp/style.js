@@ -57,6 +57,25 @@ export const Label = styled.label`
   color: #424244;
   opacity: 70%;
   margin-left: 40px;
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: -5px;
+`;
+
+export const ImageUploadIcon = styled.img`
+  width: 100px;
+  height: 100px;
+  margin-left: -20px;
+
+  &: hover {
+    cursor: pointer;
+  }
+`;
+
+export const UploadedImage = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 `;

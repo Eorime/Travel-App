@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { useAuthentification } from "../../context/AuthentificationProvider";
 import { useNavigate } from "react-router-dom";
-import { Container, Form, Input, Label, SignUpButton } from "./style";
+import {
+  Container,
+  Form,
+  ImageUploadIcon,
+  Input,
+  Label,
+  SignUpButton,
+  UploadedImage,
+} from "./style";
+import ImageUpload from "../../assets/images/pictureUpload.png";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -12,6 +21,12 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [rePassword, setRePassword] = useState("");
   const [error, setError] = useState("");
+  const [image, setImage] = useState(null);
+
+  const handleImageChange = (e) => {
+    const imgFile = e.target.files[0];
+    setImage(imgFile);
+  };
 
   const handleSubmitButton = async (e) => {
     e.preventDefault();
@@ -64,6 +79,20 @@ const SignUp = () => {
           value={rePassword}
           onChange={(e) => setRePassword(e.target.value)}
           placeholder="Re-enter Password"
+        />
+        <Label htmlFor="image">
+          {image ? (
+            <UploadedImage src={URL.createObjectURL(image)} alt="Uploaded" />
+          ) : (
+            <ImageUploadIcon src={ImageUpload} alt="Upload" />
+          )}
+        </Label>
+        <input
+          type="file"
+          id="image"
+          accept="image/*"
+          onChange={handleImageChange}
+          style={{ display: "none" }}
         />
         <SignUpButton type="submit">Sign Up</SignUpButton>
         {error && <div>{error}</div>}

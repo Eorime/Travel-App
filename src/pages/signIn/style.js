@@ -57,6 +57,6 @@ export const Label = styled.label`
   color: #424244;
   opacity: 70%;
   margin-left: 40px;
-  margin-top: 5px;
+  margin-top: 2px;
   margin-bottom: -5px;
 `;
