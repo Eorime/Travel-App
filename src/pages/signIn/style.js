@@ -11,6 +11,7 @@ export const Container = styled.div`
   margin: 0 auto;
   margin-top: 230px;
   border-radius: 10px;
+  margin-bottom: 130px;
 
   @media screen and (max-width: 800px) {
     width: 340px;
