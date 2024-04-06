@@ -12,6 +12,7 @@ import {
 } from "./style";
 import ImageUpload from "../../assets/images/pictureUpload.png";
 import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -45,6 +46,7 @@ const SignUp = () => {
 
   return (
     <>
+      <Header />
       <Container>
         <Form onSubmit={handleSubmitButton}>
           <Label htmlFor="name">First Name</Label>

@@ -3,6 +3,7 @@ import { useAuthentification } from "../../context/AuthentificationProvider";
 import { useNavigate } from "react-router-dom";
 import { Container, Form, Input, Label, SubmitButton } from "./style";
 import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 
 const SignIn = () => {
   const { signIn } = useAuthentification();
@@ -23,6 +24,7 @@ const SignIn = () => {
 
   return (
     <>
+      <Header />
       <Container>
         <Form onSubmit={handleSubmit}>
           <Label htmlFor="email">Email</Label>

@@ -6,12 +6,13 @@ export const HeaderContainer = styled.div`
   position: fixed;
   overflow: hidden;
   width: 100%;
-  height: 60; //105
+  height: 105px;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.3s ease-in;
   color: #ffffff;
+  background-color: #eae9e9;
   @media screen and (max-width: 800px) {
     max-width: 100%;
   }
@@ -22,6 +23,8 @@ export const HeaderTitle = styled.h1`
   font-family: "Kalnia", serif;
   margin-left: 170px;
   font-weight: 450;
+  margin-top: 20px;
+  color: #424244;
 
   @media screen and (max-width: 800px) {
     font-size: 24px;
