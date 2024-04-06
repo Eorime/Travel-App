@@ -23,7 +23,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <HeaderTitle>ExploreEra</HeaderTitle>
+      <StyledLink to={routes.home}>
+        <HeaderTitle>ExploreEra</HeaderTitle>
+      </StyledLink>
       <NavigationContainer>
         <Burger onClick={clickHandle}>
           {click ? (

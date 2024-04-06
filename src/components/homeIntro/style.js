@@ -66,6 +66,11 @@ export const OfferButton = styled.button`
   border-radius: 20px;
   border: none;
 
+  &: hover {
+    background-color: #c85100;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 800px) {
     font-size: 16px;
     width: 105px;
