@@ -7,13 +7,16 @@ export const Title = styled.h1`
   font-size: 40px;
   color: #424244;
   margin-left: 190px;
+
   @media screen and (max-width: 800px) {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 55px;
   }
 `;
 
 export const VideoPlayer = styled.div`
   position: relative;
-
   height: 725px;
   width: 1580px;
   text-align: center;
@@ -23,11 +26,13 @@ export const VideoPlayer = styled.div`
   margin-left: 190px;
 
   @media screen and (max-width: 800px) {
+    margin-left: 55px;
+    height: 180px;
+    width: 340px;
   }
 `;
 
 export const Video = styled.video`
-  border-radius: 20px;
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -54,5 +59,7 @@ export const PlayButton = styled.button`
   }
 
   @media screen and (max-width: 800px) {
+    height: 32px;
+    width: 32px;
   }
 `;
