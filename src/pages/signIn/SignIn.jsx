@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useAuthentification } from "../../context/AuthentificationProvider";
 import { useNavigate } from "react-router-dom";
 import { Container, Form, Input, Label, SubmitButton } from "./style";
+import Footer from "../../components/footer/Footer";
 
 const SignIn = () => {
   const { signIn } = useAuthentification();

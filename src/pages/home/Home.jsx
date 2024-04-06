@@ -19,7 +19,7 @@ const Home = () => {
       <TourOffers />
       <Blogs />
       <Book />
-      {/* <Footer/> */}
+      <Footer />
     </HomeContainer>
   );
 };

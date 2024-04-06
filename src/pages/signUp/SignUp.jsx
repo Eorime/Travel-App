@@ -11,6 +11,7 @@ import {
   UploadedImage,
 } from "./style";
 import ImageUpload from "../../assets/images/pictureUpload.png";
+import Footer from "../../components/footer/Footer";
 
 const SignUp = () => {
   const navigate = useNavigate();
