@@ -26,7 +26,7 @@ export const MainTitle = styled.h1`
   @media screen and (max-width: 800px) {
     font-size: 22px;
     margin-top: 10px;
-    margin-left: 55px;
+    margin-left: 45px;
   }
 `;
 
@@ -38,7 +38,7 @@ export const TheMainParagraph = styled.p`
 
   @media screen and (max-width: 800px) {
     font-size: 14px;
-    margin-left: 55px;
+    margin-left: 45px;
     margin-top: 15px;
   }
 `;

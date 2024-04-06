@@ -14,7 +14,7 @@ import {
 } from "./style";
 import LeftArrow from "../../assets/images/arrowLeft.png";
 import RightArrow from "../../assets/images/arrowRight.png";
-import { data } from "../../data/carouselData/data.js";
+import { data } from "../../data/carouselData/data";
 
 const TourOffers = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
