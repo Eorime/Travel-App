@@ -18,8 +18,8 @@ const Home = () => {
       <WatchTrips />
       <TourOffers />
       <Blogs />
-      {/* <Book />
-      <Footer/> */}
+      <Book />
+      {/* <Footer/> */}
     </HomeContainer>
   );
 };
