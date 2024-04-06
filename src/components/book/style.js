@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const Title = styled.h3`
   font-size: 40px;
   color: #424244;
-  margin-left: 190px;
+  margin-left: 170px;
   margin-top: 50px;
   position: absolute;
 
@@ -37,7 +37,7 @@ export const Form = styled.form`
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   width: 1650px;
-  margin-left: 190px;
+  margin-left: 170px;
 
   @media screen and (max-width: 800px) {
     font-size: 20px;
@@ -90,7 +90,7 @@ export const BookButton = styled.button`
   background-color: #ff6700;
   color: #ffffff;
   border: none;
-  margin-left: 190px;
+  margin-left: 170px;
   margin-top: 417px;
 
   &: hover {
