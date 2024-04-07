@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Contact,
+  ContactMail,
   Container,
   Container1,
   Container2,
@@ -48,6 +49,7 @@ const Footer = () => {
         <Paragraph>555111222</Paragraph>
         <SubscribeNews>Subscribe news</SubscribeNews>
       </Container3>
+      <ContactMail placeholder="Email"></ContactMail>
     </Container>
   );
 };

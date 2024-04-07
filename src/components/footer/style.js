@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Plane from "../../assets/images/paperplane.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -144,6 +145,31 @@ export const SubscribeNews = styled.p`
   @media screen and (max-width: 800px) {
     font-size: 28px;
     margin-top: 10px;
+  }
+`;
+
+export const ContactMail = styled.input`
+  border-radius: 10px;
+  border: 1px solid #424244;
+  background-image: url(${Plane});
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 200px center;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #424244;
+  height: 50px;
+  outline: none;
+  width: 225px;
+  background-color: transparent;
+  margin-top: 270px;
+  margin-left: -245px;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 690px;
+    width: 220x;
+    height: 54px;
+    margin-left: -210px;
   }
 `;
 
