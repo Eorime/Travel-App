@@ -1,28 +1,32 @@
 import React, { useState } from "react";
 import { Container, ServiceButton, StyledLink } from "./style";
 import { routes } from "../../constants/routes";
+import { useActiveButton } from "../../context/ActiveButtonContextProvider";
 
 const ServiceSearch = () => {
-  const [activeButton, setActiveButton] = useState(null);
+  const { activeButton, setActiveButtonId } = useActiveButton();
 
   const handleClick = (buttonId) => {
-    setActiveButton(buttonId === activeButton ? null : buttonId);
+    setActiveButtonId(buttonId === activeButton ? null : buttonId);
   };
 
   return (
     <Container>
-      <ServiceButton
-        isActive={activeButton === 1}
-        onClick={() => handleClick(1)}
-      >
-        Flights
-      </ServiceButton>
-      <StyledLink
-        isActive={activeButton === 2}
-        onClick={() => handleClick(2)}
-        to={routes.stays}
-      >
-        <ServiceButton>Stays</ServiceButton>
+      <StyledLink to={routes.services}>
+        <ServiceButton
+          isActive={activeButton === 1}
+          onClick={() => handleClick(1)}
+        >
+          Flights
+        </ServiceButton>
+      </StyledLink>
+      <StyledLink to={routes.stays}>
+        <ServiceButton
+          isActive={activeButton === 2}
+          onClick={() => handleClick(2)}
+        >
+          Stays
+        </ServiceButton>
       </StyledLink>
       <ServiceButton
         isActive={activeButton === 3}
