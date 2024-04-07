@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import { useAuthentification } from "../../context/AuthentificationProvider";
 import { useNavigate } from "react-router-dom";
-import { Container, Form, Input, Label, SubmitButton } from "./style";
+import {
+  Container,
+  Form,
+  Icon,
+  IconContainer,
+  Input,
+  Label,
+  SubmitButton,
+} from "./style";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import FB from "../../assets/images/fb.png";
+import Apple from "../../assets/images/apple.png";
+import Google from "../../assets/images/google.png";
+import Mail from "../../assets/images/mail.png";
 
 const SignIn = () => {
   const { signIn } = useAuthentification();
@@ -44,6 +56,12 @@ const SignIn = () => {
           <SubmitButton type="submit">Continue</SubmitButton>
           {error && <div>{error}</div>}
         </Form>
+        <IconContainer>
+          <Icon src={FB} />
+          <Icon src={Apple} />
+          <Icon src={Google} />
+          <Icon src={Mail} />
+        </IconContainer>
       </Container>
       <Footer />
     </>

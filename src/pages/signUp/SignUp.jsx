@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import {
   Container,
   Form,
+  Icon,
+  IconContainer,
   ImageUploadIcon,
   Input,
   Label,
@@ -13,6 +15,10 @@ import {
 import ImageUpload from "../../assets/images/pictureUpload.png";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
+import FB from "../../assets/images/fb.png";
+import Apple from "../../assets/images/apple.png";
+import Google from "../../assets/images/google.png";
+import Mail from "../../assets/images/mail.png";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -101,6 +107,12 @@ const SignUp = () => {
           <SignUpButton type="submit">Sign Up</SignUpButton>
           {error && <div>{error}</div>}
         </Form>
+        <IconContainer>
+          <Icon src={FB} />
+          <Icon src={Apple} />
+          <Icon src={Google} />
+          <Icon src={Mail} />
+        </IconContainer>
       </Container>
       <Footer />
     </>

@@ -13,8 +13,10 @@ export const HeaderContainer = styled.div`
   transition: 0.3s ease-in;
   color: #ffffff;
   background-color: #eae9e9;
+
   @media screen and (max-width: 800px) {
     max-width: 100%;
+    background-color: transparent;
   }
 `;
 
@@ -29,6 +31,7 @@ export const HeaderTitle = styled.h1`
   @media screen and (max-width: 800px) {
     font-size: 24px;
     margin-left: 30px;
+    color: #ffffff;
   }
 `;
 

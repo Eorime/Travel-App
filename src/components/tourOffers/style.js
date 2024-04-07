@@ -29,6 +29,10 @@ export const CarouselContainer = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media screen and (max-width: 800px) {
+    width: 430px;
+  }
 `;
 
 export const ArrowLeft = styled.img`
