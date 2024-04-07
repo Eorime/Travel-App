@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #ffffff;
   width: 540px;
-  height: 600px;
+  height: 580px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 340px;
-    height: 540px;
+    height: 550px;
     justify-content: center;
     margin-top: 110px;
   }
@@ -106,4 +106,76 @@ export const Icon = styled.img`
     height: 60px;
     margin-right: 20px;
   }
+`;
+
+export const LongLine = styled.div`
+  background-color: #42424470;
+  width: 434px;
+  height: 1px;
+  margin-top: 490px;
+  position: absolute;
+
+  @media screen and (max-width: 800px) {
+    width: 280px;
+    margin-top: 465px;
+  }
+`;
+
+export const ContinueWithContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 338px;
+`;
+
+export const Line = styled.div`
+  background-color: #42424470;
+  width: 122px;
+  margin-left: 30px;
+  margin-right: 30px;
+  height: 1px;
+  margin-top: 22px;
+
+  @media screen and (max-width: 800px) {
+    width: 75px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+`;
+
+export const ContinueWith = styled.p`
+  color: #42424470;
+  font-size: 16px;
+
+  @media screen and (max-width: 800px) {
+    white-space: nowrap;
+    font-size: 14px;
+    margin-top: 7px;
+  }
+`;
+
+export const TermsContainer = styled.div`
+  position: absolute;
+  margin-top: 495px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 470px;
+  }
+`;
+
+export const Terms = styled.p`
+  color: #42424470;
+  font-size: 16px;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
+`;
+
+export const And = styled.span`
+  color: #c85100;
 `;

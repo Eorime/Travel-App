@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import { useAuthentification } from "../../context/AuthentificationProvider";
 import { useNavigate } from "react-router-dom";
 import {
+  And,
   Container,
+  ContinueWith,
+  ContinueWithContainer,
   Form,
   Icon,
   IconContainer,
   ImageUploadIcon,
   Input,
   Label,
+  Line,
+  LongLine,
   SignUpButton,
+  Terms,
+  TermsContainer,
   UploadedImage,
 } from "./style";
 import ImageUpload from "../../assets/images/pictureUpload.png";
@@ -107,12 +114,24 @@ const SignUp = () => {
           <SignUpButton type="submit">Sign Up</SignUpButton>
           {error && <div>{error}</div>}
         </Form>
+        <ContinueWithContainer>
+          <Line />
+          <ContinueWith>Or continue with</ContinueWith>
+          <Line />
+        </ContinueWithContainer>
         <IconContainer>
           <Icon src={FB} />
           <Icon src={Apple} />
           <Icon src={Google} />
           <Icon src={Mail} />
         </IconContainer>
+        <LongLine />
+        <TermsContainer>
+          <Terms>
+            By signing in or creating an account, you agree with our <br></br>
+            <And>Terms & conditions</And> and <And>Privacy policy</And>
+          </Terms>
+        </TermsContainer>
       </Container>
       <Footer />
     </>
