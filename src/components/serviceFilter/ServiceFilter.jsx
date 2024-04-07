@@ -3,7 +3,7 @@ import { Container, ServiceButton, StyledLink } from "./style";
 import { routes } from "../../constants/routes";
 import { useActiveButton } from "../../context/ActiveButtonContextProvider";
 
-const ServiceSearch = () => {
+const ServiceFilter = () => {
   const { activeButton, setActiveButtonId } = useActiveButton();
 
   const handleClick = (buttonId) => {
@@ -50,4 +50,4 @@ const ServiceSearch = () => {
   );
 };
 
-export default ServiceSearch;
+export default ServiceFilter;

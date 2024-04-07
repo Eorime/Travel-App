@@ -28,7 +28,7 @@ const SignIn = () => {
     e.preventDefault();
     const successful = signIn(email, password);
     if (successful) {
-      navigate("/");
+      navigate("/services");
     } else {
       setError("Couldn't find the provided email or password");
     }

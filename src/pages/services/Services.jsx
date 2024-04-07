@@ -2,14 +2,14 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Container } from "./style";
-import ServiceSearch from "../../components/serviceSearch/ServiceSearch";
+import ServiceFilter from "../../components/serviceFilter/ServiceFilter";
 
 const Services = () => {
   return (
     <>
       <Header />
       <Container>
-        <ServiceSearch />
+        <ServiceFilter />
       </Container>
       <Footer />
     </>
