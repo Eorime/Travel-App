@@ -1,5 +1,6 @@
 import React from "react";
 import { BookButton, Container, Form, SelectInput, Title } from "./style";
+import { data } from "../../data/bookingData/bookingData";
 
 const Book = () => {
   return (
@@ -10,29 +11,34 @@ const Book = () => {
           <option value="" disabled selected>
             Your starting location
           </option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+          {data.map((location, index) => (
+            <option
+              key={index}
+              style={{
+                fontSize: "16px",
+              }}
+            >
+              {location.capital}, {location.country}
+            </option>
+          ))}
         </SelectInput>
-        <SelectInput id="option2" name="option2">
+        <SelectInput id="offer" name="offer">
           <option value="" disabled selected>
             Choose a tour offer
           </option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
         </SelectInput>
-        <SelectInput id="option2" name="option2">
+        <SelectInput id="date" name="date">
           <option value="" disabled selected>
             Choose date
           </option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
         </SelectInput>
-        <SelectInput id="option2" name="option2">
+        <SelectInput id="people" name="people">
           <option value="" disabled selected>
             Persons
           </option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+          <option value="option2">1 Person</option>
+          <option value="option3">2 People</option>
+          <option value="option3">3 People</option>
         </SelectInput>
       </Form>
       <BookButton>Book Now</BookButton>
