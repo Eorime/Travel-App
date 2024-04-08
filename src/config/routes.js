@@ -5,6 +5,8 @@ import Flights from "../pages/flights/Flights";
 import Stays from "../pages/stays/Stays";
 import SignIn from "../pages/signIn/SignIn";
 import SignUp from "../pages/signUp/SignUp";
+import StaysSearch from "../pages/staysSearch/StaysSearch";
+import StaysDetails from "../pages/staysDetails/StaysDetails";
 
 export const appRoutes = [
   {
@@ -30,5 +32,13 @@ export const appRoutes = [
   {
     path: routes.signUp,
     Component: SignUp,
+  },
+  {
+    path: routes.staysSearch,
+    Component: StaysSearch,
+  },
+  {
+    path: routes.staysDetails,
+    Component: StaysDetails,
   },
 ];
