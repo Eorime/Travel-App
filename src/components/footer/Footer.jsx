@@ -43,7 +43,6 @@ const Footer = () => {
         <StyledLink>Blog</StyledLink>
         <StyledLink to={routes.services}>Our Services</StyledLink>
         <StyledLink>Our Offers</StyledLink>
-        <Copyright>Copyright 2024</Copyright>
       </Container2>
       <Container3>
         <Contact>Contact us</Contact>
@@ -52,6 +51,7 @@ const Footer = () => {
         <SubscribeNews>Subscribe news</SubscribeNews>
       </Container3>
       <ContactMail placeholder="Email"></ContactMail>
+      <Copyright>Copyright 2024</Copyright>
     </Container>
   );
 };

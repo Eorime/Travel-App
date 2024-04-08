@@ -12,7 +12,7 @@ export const Container = styled.div`
   color: #424244;
 
   @media screen and (max-width: 800px) {
-    height: 784px;
+    height: 900px;
   }
 `;
 
@@ -177,6 +177,11 @@ export const EmailField = styled.input``;
 
 export const Copyright = styled.p`
   font-size: 24px;
-  margin-top: 50px;
-  margin-left: -20px;
+  margin-top: 380px;
+  margin-left: -850px;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 800px;
+    margin-left: -180px;
+  }
 `;
