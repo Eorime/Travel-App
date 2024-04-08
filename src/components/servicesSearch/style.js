@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Calendar from "../../assets/images/calendar.png";
 
 export const Container = styled.div`
   margin-left: 150px;
@@ -64,6 +65,31 @@ export const SearchButton = styled.button`
 
   &: hover {
     background-color: #c85100;
+    cursor: pointer;
+  }
+`;
+
+export const CalendarImg = styled.img`
+  height: 32px;
+  width: 32px;
+`;
+
+export const CalendarInput = styled.input`
+  font-size: 20px;
+  border: none;
+  background-image: url(${Calendar});
+  font-size: 18px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 32px 32px;
+  outline: none;
+  border: solid 2px #ff6700;
+  width: 430px;
+  height: 50px;
+  margin-right: 20px;
+
+  &: hover {
     cursor: pointer;
   }
 `;

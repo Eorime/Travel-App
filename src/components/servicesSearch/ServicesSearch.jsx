@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import {
+  CalendarInput,
   Container,
   FilterArrow,
   FilterContainer,
@@ -12,6 +13,12 @@ import Arrow from "../../assets/images/dropArrow.png";
 import { useNavigate } from "react-router-dom";
 
 const ServicesSearch = () => {
+  const [showCalendar, setShowCalendar] = useState(false);
+
+  const handleCalendarClick = () => {
+    setShowCalendar(!showCalendar);
+  };
+
   const navigate = useNavigate();
   const handleSearchButtonClick = () => {
     navigate("/flights");
@@ -29,7 +36,7 @@ const ServicesSearch = () => {
       <InputContainer>
         <Input style={{ pointerEvents: "none" }}></Input>
         <Input style={{ pointerEvents: "none" }}></Input>
-        <Input></Input>
+        <CalendarInput type="date"></CalendarInput>
         <SearchButton onClick={handleSearchButtonClick}>Search</SearchButton>
       </InputContainer>
     </Container>

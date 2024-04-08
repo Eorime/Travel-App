@@ -1,6 +1,10 @@
-const airlinesData = [
+import Georgian from "../../assets/images/georgianAirlines.png";
+import Turkish from "../../assets/images/turkish.png";
+import Qatar from "../../assets/images/qatar.png";
+
+export const flightsData = [
   {
-    img: "",
+    img: Turkish,
     airlinesName: "Turkish Airlines",
     takeOff: "17:30",
     landing: "00:30",
@@ -9,7 +13,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Qatar,
     airlinesName: "Qatar Airways",
     takeOff: "08:15",
     landing: "15:15",
@@ -18,7 +22,7 @@ const airlinesData = [
     stops: 1,
   },
   {
-    img: "",
+    img: Georgian,
     airlinesName: "Georgian Airlines",
     takeOff: "11:45",
     landing: "18:45",
@@ -27,7 +31,7 @@ const airlinesData = [
     stops: 0,
   },
   {
-    img: "",
+    img: Turkish,
     airlinesName: "Turkish Airlines",
     takeOff: "13:00",
     landing: "20:00",
@@ -36,7 +40,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Qatar,
     airlinesName: "Qatar Airways",
     takeOff: "06:45",
     landing: "13:45",
@@ -45,7 +49,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Georgian,
     airlinesName: "Georgian Airlines",
     takeOff: "10:30",
     landing: "17:30",
@@ -54,7 +58,7 @@ const airlinesData = [
     stops: 1,
   },
   {
-    img: "",
+    img: Turkish,
     airlinesName: "Turkish Airlines",
     takeOff: "15:15",
     landing: "22:15",
@@ -63,7 +67,7 @@ const airlinesData = [
     stops: 0,
   },
   {
-    img: "",
+    img: Qatar,
     airlinesName: "Qatar Airways",
     takeOff: "09:00",
     landing: "16:00",
@@ -72,7 +76,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Georgian,
     airlinesName: "Georgian Airlines",
     takeOff: "12:45",
     landing: "19:45",
@@ -81,7 +85,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Turkish,
     airlinesName: "Turkish Airlines",
     takeOff: "16:30",
     landing: "23:30",
@@ -90,7 +94,7 @@ const airlinesData = [
     stops: 1,
   },
   {
-    img: "",
+    img: Qatar,
     airlinesName: "Qatar Airways",
     takeOff: "07:15",
     landing: "14:15",
@@ -99,7 +103,7 @@ const airlinesData = [
     stops: 0,
   },
   {
-    img: "",
+    img: Georgian,
     airlinesName: "Georgian Airlines",
     takeOff: "11:00",
     landing: "18:00",
@@ -108,7 +112,7 @@ const airlinesData = [
     stops: 2,
   },
   {
-    img: "",
+    img: Turkish,
     airlinesName: "Turkish Airlines",
     takeOff: "14:45",
     landing: "21:45",
@@ -117,7 +121,7 @@ const airlinesData = [
     stops: 1,
   },
   {
-    img: "",
+    img: Qatar,
     airlinesName: "Qatar Airways",
     takeOff: "08:30",
     landing: "15:30",
@@ -126,7 +130,7 @@ const airlinesData = [
     stops: 0,
   },
   {
-    img: "",
+    img: Georgian,
     airlinesName: "Georgian Airlines",
     takeOff: "10:15",
     landing: "17:15",
@@ -135,5 +139,3 @@ const airlinesData = [
     stops: 2,
   },
 ];
-
-console.log(airlinesData);
