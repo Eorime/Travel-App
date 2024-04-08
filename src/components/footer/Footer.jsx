@@ -6,6 +6,7 @@ import {
   Container1,
   Container2,
   Container3,
+  Copyright,
   FollowUs,
   Icon,
   LinksTitle,
@@ -42,6 +43,7 @@ const Footer = () => {
         <StyledLink>Blog</StyledLink>
         <StyledLink to={routes.services}>Our Services</StyledLink>
         <StyledLink>Our Offers</StyledLink>
+        <Copyright>Copyright 2024</Copyright>
       </Container2>
       <Container3>
         <Contact>Contact us</Contact>
