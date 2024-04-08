@@ -23,6 +23,7 @@ import FB from "../../assets/images/fb.png";
 import Apple from "../../assets/images/apple.png";
 import Google from "../../assets/images/google.png";
 import Mail from "../../assets/images/mail.png";
+import Modal from "../../components/modal/Modal";
 
 const SignIn = () => {
   const { signIn } = useAuthentification();
@@ -30,6 +31,15 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -78,7 +88,9 @@ const SignIn = () => {
         <TermsContainer>
           <Terms>
             By signing in or creating an account, you agree with our <br></br>
-            <And>Terms & conditions</And> and <And>Privacy policy</And>
+            <And onClick={handleOpenModal}>Terms & conditions</And> and
+            <And onClick={handleOpenModal}> Privacy policy</And>
+            {isModalOpen && <Modal onClose={handleCloseModal} />}
           </Terms>
         </TermsContainer>
       </Container>

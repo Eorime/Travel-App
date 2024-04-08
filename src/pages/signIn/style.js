@@ -178,4 +178,8 @@ export const Terms = styled.p`
 
 export const And = styled.span`
   color: #c85100;
+
+  &: hover {
+    cursor: pointer;
+  }
 `;

@@ -12,7 +12,7 @@ export const Container = styled.div`
   color: #424244;
 
   @media screen and (max-width: 800px) {
-    height: 900px;
+    height: 880px;
   }
 `;
 
