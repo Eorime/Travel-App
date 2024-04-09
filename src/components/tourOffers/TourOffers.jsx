@@ -18,10 +18,12 @@ import { data } from "../../data/carouselData/data";
 
 const TourOffers = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 6;
+  const totalSlides = data.length;
+
+  const slidesPerPage = 4;
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => Math.min(prev + 1, totalSlides));
+    setCurrentSlide((prev) => Math.min(prev + 1, totalSlides - slidesPerPage));
   };
 
   const prevSlide = () => {
@@ -35,14 +37,16 @@ const TourOffers = () => {
       <ArrowRight src={RightArrow} alt="Next" onClick={nextSlide} />
       <CarouselContainer>
         <CardContainer>
-          {data.map((card, index) => (
-            <Card key={index}>
-              <CardImg src={card.img} />
-              <CardTitle>{card.title}</CardTitle>
-              <CardDetails>{card.description}</CardDetails>
-              <CardPrice>{card.price}</CardPrice>
-            </Card>
-          ))}
+          {data
+            .slice(currentSlide, currentSlide + slidesPerPage)
+            .map((card, index) => (
+              <Card key={index}>
+                <CardImg src={card.img} />
+                <CardTitle>{card.title}</CardTitle>
+                <CardDetails>{card.description}</CardDetails>
+                <CardPrice>{card.price}</CardPrice>
+              </Card>
+            ))}
         </CardContainer>
       </CarouselContainer>
     </Container>

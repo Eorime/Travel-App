@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -79,4 +80,11 @@ export const Paragraph = styled.p`
     font-size: 16px;
     margin-top: 0px;
   }
+`;
+
+export const SeeAll = styled(Link)`
+  font-size: 20px;
+  color: #c85100;
+  position: relative;
+  margin-left: 1700px;
 `;
