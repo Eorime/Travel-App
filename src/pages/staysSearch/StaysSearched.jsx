@@ -4,17 +4,19 @@ import ServicesSearch from "../../components/servicesSearch/ServicesSearch";
 import { Container } from "./style";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import StaysSearchComponent from "../../components/staysSearchComponent/StaysSearchComponent";
 
-const StaysSearch = () => {
+const StaysSearched = () => {
   return (
     <>
       <Header />
       <Container>
         <ServiceFilter />
+        <StaysSearchComponent />
       </Container>
       <Footer />
     </>
   );
 };
 
-export default StaysSearch;
+export default StaysSearched;

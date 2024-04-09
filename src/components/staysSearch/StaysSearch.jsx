@@ -22,31 +22,13 @@ import Villas from "../../assets/images/villas.png";
 import { useNavigate } from "react-router-dom";
 import LeftArrow from "../../assets/images/arrowLeft.png";
 import RightArrow from "../../assets/images/arrowRight.png";
+import StaysSearchComponent from "../staysSearchComponent/StaysSearchComponent";
 
 const StaysSearch = () => {
-  const navigate = useNavigate();
-
-  const handleSearchbutton = () => {
-    navigate("/staysSearch");
-  };
   return (
     <Container>
-      <InputContainer>
-        <Input
-          placeholder="Choose city"
-          style={{ pointerEvents: "none" }}
-        ></Input>
-        <InputCalendar type="date"></InputCalendar>
-        <InputPersons
-          placeholder="2 Adults"
-          style={{ pointerEvents: "none" }}
-        ></InputPersons>
-        <SearchButton onClick={handleSearchbutton}>Search</SearchButton>
-      </InputContainer>
+      <StaysSearchComponent />
       <BrowseContainer>
-        <BrowseTitle>Browse by property type</BrowseTitle>
-        <ArrowLeft src={LeftArrow} alt="Previous" />
-        <ArrowRight src={RightArrow} alt="Next" />
         <BrowseImgsContainer>
           <BrowseImgContainer>
             <BrowserImg src={Hotels} />

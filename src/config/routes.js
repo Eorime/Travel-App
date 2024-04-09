@@ -5,7 +5,7 @@ import Flights from "../pages/flights/Flights";
 import Stays from "../pages/stays/Stays";
 import SignIn from "../pages/signIn/SignIn";
 import SignUp from "../pages/signUp/SignUp";
-import StaysSearch from "../pages/staysSearch/StaysSearch";
+import StaysSearch from "../pages/staysSearch/StaysSearched";
 import StaysDetails from "../pages/staysDetails/StaysDetails";
 
 export const appRoutes = [
