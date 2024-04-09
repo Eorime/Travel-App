@@ -16,6 +16,7 @@ import {
 import { routes } from "../../constants/routes";
 import BurgerImg from "../../assets/images/burger.png";
 import CloseImage from "../../assets/images/close.png";
+import User from "../../assets/images/Vector.png";
 
 const Header = () => {
   const [click, setClick] = useState(false);

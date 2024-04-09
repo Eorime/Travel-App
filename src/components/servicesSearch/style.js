@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import Calendar from "../../assets/images/calendar.png";
+import Plus from "../../assets/images/addPlus.png";
+import Close from "../../assets/images/closeB.png";
+import Down from "../../assets/images/smallDown.png";
 
 export const Container = styled.div`
   margin-left: 150px;
@@ -48,9 +51,33 @@ export const Input = styled.input`
   width: 430px;
   height: 50px;
   margin-right: 20px;
+  background: url(${Plus}) calc(100% - 20px) center no-repeat,
+    url(${Close}) calc(100% - 270px) center no-repeat;
+  background-size: 40px 40px, 32px 32px, 32px 32px;
+  background-color: #ffffff;
 
-  &: active {
-    border: solid 2px #c85100;
+  &::placeholder {
+    padding-left: 25px;
+  }
+`;
+
+export const InputParis = styled.input`
+  font-size: 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  outline: none;
+  border: solid 2px #ff6700;
+  width: 430px;
+  height: 50px;
+  margin-right: 20px;
+  background: url(${Plus}) calc(100% - 20px) center no-repeat,
+    url(${Down}) calc(100% - 300px) center no-repeat;
+  background-size: 40px 40px, 32px 32px, 32px 32px;
+  background-color: #ffffff;
+
+  &::placeholder {
+    padding-left: 25px;
   }
 `;
 
@@ -69,27 +96,24 @@ export const SearchButton = styled.button`
   }
 `;
 
-export const CalendarImg = styled.img`
-  height: 32px;
-  width: 32px;
-`;
-
 export const CalendarInput = styled.input`
   font-size: 20px;
   border: none;
-  background-image: url(${Calendar});
   font-size: 18px;
   border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 10px center;
-  background-size: 32px 32px;
   outline: none;
   border: solid 2px #ff6700;
   width: 430px;
   height: 50px;
   margin-right: 20px;
 
-  &: hover {
-    cursor: pointer;
+  &::placeholder {
+    padding-left: 60px;
   }
+
+  background: url(${Plus}) calc(100% - 20px) center no-repeat,
+    url(${Calendar}) calc(100% - 380px) center no-repeat,
+    url(${Close}) calc(100% - 260px) center no-repeat;
+  background-size: 40px 40px, 32px 32px, 32px 32px;
+  background-color: #ffffff;
 `;

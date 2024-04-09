@@ -7,6 +7,7 @@ import {
   FilterElement,
   Input,
   InputContainer,
+  InputParis,
   SearchButton,
 } from "./style";
 import Arrow from "../../assets/images/dropArrow.png";
@@ -34,9 +35,18 @@ const ServicesSearch = () => {
         <FilterArrow src={Arrow} />
       </FilterContainer>
       <InputContainer>
-        <Input style={{ pointerEvents: "none" }}></Input>
-        <Input style={{ pointerEvents: "none" }}></Input>
-        <CalendarInput type="date"></CalendarInput>
+        <Input
+          placeholder="From Tbilisi"
+          style={{ pointerEvents: "none" }}
+        ></Input>
+        <InputParis
+          placeholder="To Paris"
+          style={{ pointerEvents: "none" }}
+        ></InputParis>
+        <CalendarInput
+          placeholder="Calendar"
+          style={{ pointerEvents: "none" }}
+        ></CalendarInput>
         <SearchButton onClick={handleSearchButtonClick}>Search</SearchButton>
       </InputContainer>
     </Container>

@@ -10,7 +10,9 @@ import {
   BrowserImg,
   Container,
   Input,
+  InputCalendar,
   InputContainer,
+  InputPersons,
   SearchButton,
 } from "./style";
 import Hotels from "../../assets/images/hotels.png";
@@ -30,9 +32,15 @@ const StaysSearch = () => {
   return (
     <Container>
       <InputContainer>
-        <Input style={{ pointerEvents: "none" }}></Input>
-        <Input style={{ pointerEvents: "none" }}></Input>
-        <Input></Input>
+        <Input
+          placeholder="Choose city"
+          style={{ pointerEvents: "none" }}
+        ></Input>
+        <InputCalendar type="date"></InputCalendar>
+        <InputPersons
+          placeholder="2 Adults"
+          style={{ pointerEvents: "none" }}
+        ></InputPersons>
         <SearchButton onClick={handleSearchbutton}>Search</SearchButton>
       </InputContainer>
       <BrowseContainer>
