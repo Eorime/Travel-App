@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   AirlineName,
   Container,
+  DealContainer,
   Flight,
   FlightHours,
   FlightLanding,
@@ -9,7 +10,10 @@ import {
   FlightPrice,
   FlightTakeOff,
   FlightsContainer,
+  Line,
+  LogoContainer,
   SeeMoreButton,
+  ViewDeal,
 } from "./style";
 import { flightsData } from "../../data/flightsData/data";
 
@@ -32,12 +36,21 @@ const FlightsFilter = () => {
           .slice(0, showFlights ? undefined : firstFlights)
           .map((flight, index) => (
             <Flight key={index}>
-              <FlightLogo src={flight.img} />
-              <AirlineName>{flight.airlinesName}</AirlineName>
+              <LogoContainer>
+                <FlightLogo src={flight.img} />
+                <AirlineName>{flight.airlinesName}</AirlineName>
+              </LogoContainer>
               <FlightTakeOff>Take off {flight.takeOff}</FlightTakeOff>
               <FlightLanding>Landing {flight.landing}</FlightLanding>
               <FlightHours>{flight.hours}</FlightHours>
-              <FlightPrice>{flight.price}</FlightPrice>
+              <DealContainer>
+                <FlightPrice>
+                  <span>Price</span>
+                  {flight.price}
+                </FlightPrice>
+                <Line></Line>
+                <ViewDeal>View deal</ViewDeal>
+              </DealContainer>
             </Flight>
           ))}
       </FlightsContainer>
