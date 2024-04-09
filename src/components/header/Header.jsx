@@ -6,6 +6,7 @@ import {
   Close,
   HeaderContainer,
   HeaderTitle,
+  Line,
   MenuItem,
   NavigateElement,
   NavigationContainer,
@@ -43,6 +44,7 @@ const Header = () => {
               <MenuItem>Sign Up</MenuItem>
               <br></br>
             </StyledLink>
+            <Line />
             <StyledLink to={routes.home}>
               <MenuItem>Home</MenuItem>
             </StyledLink>

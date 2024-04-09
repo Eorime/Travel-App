@@ -64,7 +64,12 @@ export const Burger = styled.div`
   right: 30px;
   width: 32px;
   height: 32px;
-  margin-top: -50px;
+  margin-top: -150px;
+
+  &: hover {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 800px) {
     display: block;
   }
@@ -107,6 +112,15 @@ export const MenuItem = styled.li`
 
   @media screen and (max-width: 800px) {
     margin: ;
+  }
+`;
+
+export const Line = styled.div`
+  @media screen and (max-width: 800px) {
+    background-color: #424244;
+    height: 1px;
+    width: 90%;
+    margin: 5px auto;
   }
 `;
 
