@@ -8,6 +8,10 @@ export const Container = styled.div`
   margin-left: 150px;
   margin-top: 60px;
   margin-bottom: -300px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: -620px;
+  }
 `;
 
 export const FilterContainer = styled.div`
@@ -17,15 +21,15 @@ export const FilterContainer = styled.div`
   flex-direction: row;
   margin-left: 30px;
   margin-top: -40px;
+
+  @media screen and (max-width: 800px) {
+    white-space: nowrap;
+    margin-left: -100px;
+  }
 `;
 
 export const FilterElement = styled.p`
   font-size: 18px;
-  //   background-image: url($);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-image-height: 32px;
-  //   background-image-width: 32px;
 `;
 
 export const FilterArrow = styled.img`
@@ -39,6 +43,11 @@ export const FilterArrow = styled.img`
 export const InputContainer = styled.div`
   margin-left: 20px;
   margin-top: 5px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Input = styled.input`
@@ -58,6 +67,17 @@ export const Input = styled.input`
 
   &::placeholder {
     padding-left: 25px;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
+    background: url(${Plus}) calc(100% - 20px) center no-repeat,
+      url(${Close}) calc(100% - 180px) center no-repeat;
+    background-size: 40px 40px, 32px 32px, 32px 32px;
+    background-color: #ffffff;
   }
 `;
 
@@ -79,6 +99,17 @@ export const InputParis = styled.input`
   &::placeholder {
     padding-left: 25px;
   }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
+    background: url(${Plus}) calc(100% - 20px) center no-repeat,
+      url(${Down}) calc(100% - 210px) center no-repeat;
+    background-size: 40px 40px, 32px 32px, 32px 32px;
+    background-color: #ffffff;
+  }
 `;
 
 export const SearchButton = styled.button`
@@ -93,6 +124,13 @@ export const SearchButton = styled.button`
   &: hover {
     background-color: #c85100;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
   }
 `;
 
@@ -116,4 +154,20 @@ export const CalendarInput = styled.input`
     url(${Close}) calc(100% - 260px) center no-repeat;
   background-size: 40px 40px, 32px 32px, 32px 32px;
   background-color: #ffffff;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
+    background: url(${Plus}) calc(100% - 20px) center no-repeat,
+      url(${Calendar}) calc(100% - 290px) center no-repeat,
+      url(${Close}) calc(100% - 160px) center no-repeat;
+    background-size: 40px 40px, 32px 32px, 32px 32px;
+    background-color: #ffffff;
+
+    &::placeholder {
+      padding-left: 60px;
+    }
+  }
 `;

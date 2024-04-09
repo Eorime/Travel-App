@@ -119,13 +119,15 @@ export const Line = styled.div`
   @media screen and (max-width: 800px) {
     background-color: #424244;
     height: 1px;
-    width: 90%;
-    margin: 5px auto;
+    width: 70%;
+    margin-top: 85px;
+    position: absolute;
   }
 `;
 
 export const Close = styled.img`
   width: 18px;
   height: 18px;
-  z-index: 1200;
+  margin-top: 100px;
+  position: absolute;
 `;

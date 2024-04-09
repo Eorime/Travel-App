@@ -12,7 +12,7 @@ const ServiceFilter = () => {
 
   return (
     <Container>
-      <StyledLink to={routes.services}>
+      <StyledLink to={routes.flights}>
         <ServiceButton
           isActive={activeButton === 1}
           onClick={() => handleClick(1)}

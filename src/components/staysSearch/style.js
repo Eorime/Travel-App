@@ -6,11 +6,20 @@ export const Container = styled.div`
   margin-left: 150px;
   margin-top: 40px;
   margin-bottom: -600px;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: -620px;
+  }
 `;
 
 export const InputContainer = styled.div`
   margin-left: 20px;
   margin-top: 5px;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Input = styled.input`
@@ -31,6 +40,17 @@ export const Input = styled.input`
 
   &: active {
     border: solid 2px #c85100;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
+    background: url(${Plus}) calc(100% - 20px) center no-repeat,
+      url(${Down}) calc(100% - 180px) center no-repeat;
+    background-size: 40px 40px, 32px 32px, 32px 32px;
+    background-color: #ffffff;
   }
 `;
 
@@ -88,6 +108,17 @@ export const InputPersons = styled.input`
   &: active {
     border: solid 2px #c85100;
   }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
+    background: url(${Plus}) calc(100% - 20px) center no-repeat,
+      url(${Down}) calc(100% - 180px) center no-repeat;
+    background-size: 40px 40px, 32px 32px, 32px 32px;
+    background-color: #ffffff;
+  }
 `;
 
 export const SearchButton = styled.button`
@@ -102,6 +133,13 @@ export const SearchButton = styled.button`
   &: hover {
     background-color: #c85100;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-top: 20px;
+    margin-left: -130px;
+    height: 64px;
+    width: 340px;
   }
 `;
 

@@ -6,6 +6,7 @@ import {
   Container,
   ContinueWith,
   ContinueWithContainer,
+  Error,
   Form,
   Icon,
   IconContainer,
@@ -71,7 +72,7 @@ const SignIn = () => {
             placeholder="Enter your password"
           />
           <SubmitButton type="submit">Continue</SubmitButton>
-          {error && <div>{error}</div>}
+          {error && <Error>{error}</Error>}
         </Form>
         <ContinueWithContainer>
           <Line />

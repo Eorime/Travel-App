@@ -30,11 +30,7 @@ const Header = () => {
       </StyledLink>
       <NavigationContainer>
         <Burger onClick={clickHandle}>
-          {click ? (
-            <Close src={CloseImage} style={{ zIndex: "1500" }} />
-          ) : (
-            <BurgerImage src={BurgerImg} />
-          )}
+          {click ? <Close src={CloseImage} /> : <BurgerImage src={BurgerImg} />}
         </Burger>
         {click ? (
           <BurgerMenu active={click}>

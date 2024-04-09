@@ -14,12 +14,6 @@ import Arrow from "../../assets/images/dropArrow.png";
 import { useNavigate } from "react-router-dom";
 
 const ServicesSearch = () => {
-  const [showCalendar, setShowCalendar] = useState(false);
-
-  const handleCalendarClick = () => {
-    setShowCalendar(!showCalendar);
-  };
-
   const navigate = useNavigate();
   const handleSearchButtonClick = () => {
     navigate("/flights");

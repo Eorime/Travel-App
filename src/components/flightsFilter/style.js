@@ -12,11 +12,11 @@ export const FlightsContainer = styled.div`
 
 export const Flight = styled.div`
   max-width: 100%;
-  width: 900px;
+  width: 1170px;
   height: auto;
   background-color: #ffffff;
   border-radius: 20px;
-  margin-left: 650px;
+  margin-left: 400px;
   padding: 20px;
   color: #424244;
   margin-bottom: 20px;

@@ -183,3 +183,10 @@ export const And = styled.span`
     cursor: pointer;
   }
 `;
+
+export const Error = styled.div`
+  color: #ff0000;
+  font-size: 16px;
+  align-self: center;
+  margin-top: -90px;
+`;

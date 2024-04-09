@@ -87,4 +87,10 @@ export const SeeAll = styled(Link)`
   color: #c85100;
   position: relative;
   margin-left: 1700px;
+
+  @media screen and (max-width: 800px) {
+    postion: absolute;
+    margin-top: -35px;
+    margin-left: 330px;
+  }
 `;
