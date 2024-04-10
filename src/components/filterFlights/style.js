@@ -102,11 +102,157 @@ export const CheckboxButtonImage = styled.img`
 
 export const TimesContainer = styled.div`
   margin-left: 20px;
+  position: relative;
 `;
 
 export const TimesTitle = styled.h1`
   font-weight: 400;
   font-size: 28px;
   color: #424244;
-  margin-top: 130px;
+  margin-top: 145px;
+`;
+
+export const SliderContainer = styled.div`
+  width: 320px;
+  margin: 20px 0;
+`;
+
+export const SliderInput = styled.input`
+  width: 300px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  border-radius: 5px;
+  background: #c85100;
+  outline: none;
+  -webkit-transition: 0.2s;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #c85100;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #c85100;
+    cursor: pointer;
+    top: 162px;
+    right: 35px;
+    z-index: 1;
+  }
+`;
+
+export const SliderInput2 = styled.input`
+  width: 300px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  border-radius: 5px;
+  background: #c85100;
+  outline: none;
+  -webkit-transition: 0.2s;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #c85100;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4caf50;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #c85100;
+    cursor: pointer;
+    top: 298px;
+    right: 35px;
+    z-index: 1;
+  }
+`;
+
+export const TakeOffParagraph1 = styled.p`
+  font-size: 24px;
+  color: #424244;
+`;
+
+export const TakeOffParagraph2 = styled.p`
+  font-size: 24px;
+  color: #424244;
+`;
+
+export const TakeOff1 = styled.p`
+  font-size: 20px;
+  color: #42424460;
+`;
+
+export const TakeOff2 = styled.p`
+  font-size: 20px;
+  color: #42424460;
+`;
+
+export const TakeOff24 = styled.p`
+  font-size: 20px;
+  color: #42424460;
+  margin-left: 280px;
+  margin-top: -38px;
+`;
+
+export const TakeOff24Two = styled.p`
+  font-size: 20px;
+  color: #42424460;
+  margin-left: 280px;
+  margin-top: -47px;
+`;
+
+export const AirlinesContainer = styled.div`
+  margin-left: 20px;
+`;
+
+export const AirlinesTitle = styled.h1`
+  font-weight: 400;
+  font-size: 28px;
+  color: #424244;
+  margin-top: 50px;
+`;
+
+export const AirPortsTitle = styled.h1`
+  font-weight: 400;
+  font-size: 28px;
+  color: #424244;
+  margin-top: 50px;
 `;
