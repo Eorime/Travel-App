@@ -254,5 +254,16 @@ export const AirPortsTitle = styled.h1`
   font-weight: 400;
   font-size: 28px;
   color: #424244;
-  margin-top: 50px;
+  margin-top: -30px;
+`;
+
+export const DurationContainer = styled.div`
+  margin-left: 20px;
+`;
+
+export const DurationTitle = styled.h1`
+  font-weight: 400;
+  font-size: 28px;
+  color: #424244;
+  margin-top: -30px;
 `;

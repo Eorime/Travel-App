@@ -4,6 +4,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ServiceFilter from "../../components/serviceFilter/ServiceFilter";
 import StaysSearch from "../../components/staysSearch/StaysSearch";
+import StaysSearchComponent from "../../components/staysSearchComponent/StaysSearchComponent";
 
 const Stays = () => {
   return (
@@ -11,6 +12,7 @@ const Stays = () => {
       <Header />
       <Container>
         <ServiceFilter />
+        <StaysSearchComponent />
         <StaysSearch />
       </Container>
       <Footer />

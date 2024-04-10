@@ -6,29 +6,22 @@ import {
   BrowseImgContainer,
   BrowseImgsContainer,
   BrowseParagraph,
-  BrowseTitle,
   BrowserImg,
   Container,
-  Input,
-  InputCalendar,
-  InputContainer,
-  InputPersons,
-  SearchButton,
 } from "./style";
 import Hotels from "../../assets/images/hotels.png";
 import Apartments from "../../assets/images/apartments.png";
 import Resorts from "../../assets/images/resorts.png";
 import Villas from "../../assets/images/villas.png";
-import { useNavigate } from "react-router-dom";
 import LeftArrow from "../../assets/images/arrowLeft.png";
 import RightArrow from "../../assets/images/arrowRight.png";
-import StaysSearchComponent from "../staysSearchComponent/StaysSearchComponent";
 
 const StaysSearch = () => {
   return (
     <Container>
-      <StaysSearchComponent />
       <BrowseContainer>
+        <ArrowLeft src={LeftArrow} />
+        <ArrowRight src={RightArrow} />
         <BrowseImgsContainer>
           <BrowseImgContainer>
             <BrowserImg src={Hotels} />

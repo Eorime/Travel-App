@@ -7,6 +7,8 @@ import {
   CheckboxButton,
   CheckboxButtonImage,
   Container,
+  DurationContainer,
+  DurationTitle,
   FiltersContainer,
   Line,
   Line2,
@@ -37,13 +39,32 @@ const FilterFlights = () => {
   const [timeDrop, setTimeDrop] = useState(true);
   const [takeOffOne, setTakeOffOne] = useState("12:00");
   const [takeOffTwo, setTakeOffTwo] = useState("12:00");
+  const [airport, setAirport] = useState(false);
+  const [airline, setAirline] = useState(false);
+  const [duration, setDuration] = useState(true);
+
+  const handleDuration = () => {
+    setDuration(!duration);
+  };
+
+  const handleAirline = () => {
+    setAirline(!airline);
+  };
+
+  const handleAirport = () => {
+    setAirport(!airport);
+  };
 
   const handleSliderChange = (event, setter) => {
     const totalMinutes = parseInt(event.target.value);
     const hours = Math.floor(totalMinutes / 60) + 12;
     const minutes = totalMinutes % 60;
-    const formattedHours = hours === 24 ? "00" : hours; // Change 24 to 00
+    const formattedHours = hours === 24 ? "00" : hours;
     setter(`${formattedHours}:${minutes < 10 ? "0" + minutes : minutes}`);
+  };
+
+  const handleDurationSlider = (event, setter) => {
+    const totalDuration = parseInt(event.target.value);
   };
 
   const handleStops = () => {
@@ -131,7 +152,7 @@ const FilterFlights = () => {
             <>
               <SliderContainer>
                 <TakeOffParagraph1 style={{ marginTop: "-50px" }}>
-                  Take off - Paris:{" "}
+                  Take off - Paris{" "}
                 </TakeOffParagraph1>
                 <TakeOff1>{takeOffOne}</TakeOff1>
                 <TakeOff24>24:00</TakeOff24>
@@ -168,8 +189,8 @@ const FilterFlights = () => {
         </TimesContainer>
         <AirlinesContainer>
           <AirlinesTitle>Airlines</AirlinesTitle>
-          <CheckboxButton onClick={handleTime}>
-            {timeDrop ? (
+          <CheckboxButton onClick={handleAirline}>
+            {airline ? (
               <CheckboxButtonImage
                 src={CloseForm}
                 style={{ marginTop: "-43px" }}
@@ -180,8 +201,8 @@ const FilterFlights = () => {
             )}
           </CheckboxButton>
           <AirPortsTitle>Airports</AirPortsTitle>
-          <CheckboxButton onClick={handleTime}>
-            {timeDrop ? (
+          <CheckboxButton onClick={handleAirport}>
+            {airport ? (
               <CheckboxButtonImage
                 src={CloseForm}
                 style={{ marginTop: "-43px" }}
@@ -192,6 +213,21 @@ const FilterFlights = () => {
             )}
           </CheckboxButton>
         </AirlinesContainer>
+        <DurationContainer>
+          <DurationTitle>Duration</DurationTitle>
+          <CheckboxButton onClick={handleDuration}>
+            {duration ? (
+              <CheckboxButtonImage
+                src={CloseForm}
+                style={{ marginTop: "-43px" }}
+                alt="Close Button"
+              />
+            ) : (
+              <CheckboxButtonImage src={OpenForm} alt="Open Button" />
+            )}
+            {/* /**{duration &&()} */}
+          </CheckboxButton>
+        </DurationContainer>
       </FiltersContainer>
     </Container>
   );

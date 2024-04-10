@@ -1,129 +1,35 @@
 import styled from "styled-components";
-import Plus from "../../assets/images/addPlus.png";
-import Down from "../../assets/images/smallDown.png";
 
 export const Container = styled.div`
   margin-left: 150px;
-  margin-top: 40px;
+  margin-top: -530px;
   margin-bottom: -600px;
-
-  @media screen and (max-width: 800px) {
-    margin-bottom: -620px;
-  }
 `;
 
 export const InputContainer = styled.div`
   margin-left: 20px;
   margin-top: 5px;
-
-  @media screen and (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
-  }
 `;
 
 export const Input = styled.input`
   font-size: 20px;
   border: none;
-  border-radius: 20px;
-  outline: none;
-  border: solid 2px #ff6700;
-  width: 380px;
-  height: 50px;
-  margin-right: 20px;
-  font-size: 20px;
-  padding-left: 20px;
-  background: url(${Plus}) calc(100% - 20px) center no-repeat,
-    url(${Down}) calc(100% - 230px) center no-repeat;
-  background-size: 40px 40px, 32px 32px, 32px 32px;
-  background-color: #ffffff;
-
-  &: active {
-    border: solid 2px #c85100;
-  }
-
-  @media screen and (max-width: 800px) {
-    margin-top: 20px;
-    margin-left: -130px;
-    height: 64px;
-    width: 340px;
-    background: url(${Plus}) calc(100% - 20px) center no-repeat,
-      url(${Down}) calc(100% - 180px) center no-repeat;
-    background-size: 40px 40px, 32px 32px, 32px 32px;
-    background-color: #ffffff;
-  }
-`;
-
-export const InputCalendar = styled.input`
-  font-size: 20px;
-  border: none;
+  font-size: 18px;
   border-radius: 20px;
   outline: none;
   border: solid 2px #ff6700;
   width: 430px;
   height: 50px;
   margin-right: 20px;
-  padding-left: 20px;
-  font-size: 20px;
-  background-image: url(${Plus});
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  background-position: calc(100% - 20px) center;
-
-  &: hover {
-    cursor: pointer;
-  }
 
   &: active {
     border: solid 2px #c85100;
-  }
-
-  &::-webkit-calendar-picker-indicator {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42QAAAAASUVORK5CYII=");
-    opacity: 0;
-    margin-right: 28px;
-
-    &: hover {
-      cursor: pointer;
-    }
-  }
-`;
-
-export const InputPersons = styled.input`
-  font-size: 20px;
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  border: solid 2px #ff6700;
-  width: 380px;
-  height: 50px;
-  margin-right: 20px;
-  font-size: 20px;
-  padding-left: 20px;
-  background: url(${Plus}) calc(100% - 20px) center no-repeat,
-    url(${Down}) calc(100% - 260px) center no-repeat;
-  background-size: 40px 40px, 32px 32px, 32px 32px;
-  background-color: #ffffff;
-
-  &: active {
-    border: solid 2px #c85100;
-  }
-
-  @media screen and (max-width: 800px) {
-    margin-top: 20px;
-    margin-left: -130px;
-    height: 64px;
-    width: 340px;
-    background: url(${Plus}) calc(100% - 20px) center no-repeat,
-      url(${Down}) calc(100% - 180px) center no-repeat;
-    background-size: 40px 40px, 32px 32px, 32px 32px;
-    background-color: #ffffff;
   }
 `;
 
 export const SearchButton = styled.button`
   height: 60px;
-  width: 260px;
+  width: 230px;
   border: none;
   border-radius: 20px;
   background-color: #ff6700;
@@ -134,17 +40,10 @@ export const SearchButton = styled.button`
     background-color: #c85100;
     cursor: pointer;
   }
-
-  @media screen and (max-width: 800px) {
-    margin-top: 20px;
-    margin-left: -130px;
-    height: 64px;
-    width: 340px;
-  }
 `;
 
 export const BrowseContainer = styled.div`
-  margin-top: 40px;
+  margin-top: 10px;
   margin-left: 20px;
 `;
 
@@ -179,8 +78,9 @@ export const BrowseParagraph = styled.p`
 export const ArrowLeft = styled.img`
   height: 40px;
   width: 40px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
 
   &: hover {
     cursor: pointer;
@@ -194,9 +94,9 @@ export const ArrowLeft = styled.img`
 export const ArrowRight = styled.img`
   height: 40px;
   width: 40px;
-  margin-left: 1500px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-left: 1495px;
+  margin-top: -20px;
+  margin-bottom: 10px;
 
   &: hover {
     cursor: pointer;
