@@ -48,7 +48,7 @@ export const AirlineName = styled.h5`
 export const FlightTakeOff = styled.p`
   font-weight: 500;
   font-size: 24px;
-  margin-left: 90px;
+  margin-left: 80px;
   margin-right: 70px;
   margin-top: 92px;
 `;
@@ -63,7 +63,7 @@ export const FlightLanding = styled.p`
 export const DealContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 90px;
   margin-top: 3px;
 `;
 
@@ -137,7 +137,7 @@ export const TakeOffP = styled.p`
   white-space: nowrap;
   margin-top: 40px;
   margin-right: -160px;
-  margin-left: 80px;
+  margin-left: 90px;
 `;
 
 export const LandingP = styled.p`
