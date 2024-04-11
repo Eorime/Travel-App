@@ -6,6 +6,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import StaysSearchComponent from "../../components/staysSearchComponent/StaysSearchComponent";
 import StaysFilter from "../../components/staysFilter/StaysFilter";
+import StayList from "../../components/stayList/StayList";
 
 const StaysSearched = () => {
   return (
@@ -15,6 +16,7 @@ const StaysSearched = () => {
         <ServiceFilter />
         <StaysSearchComponent />
         <StaysFilter />
+        <StayList />
       </Container>
       <Footer />
     </>
