@@ -72,7 +72,13 @@ export const PriceContainer = styled.div`
   flex-direction: column;
   margin-left: 920px;
   margin-top: -240px;
-  margin-bottom: 80px;
+  margin-bottom: 35px;
+`;
+
+export const RatingContainer = styled.div`
+  margin-left: -90px;
+  margin-top: -20px;
+  margin-bottom: -10px;
 `;
 
 export const StayRating = styled.p`
@@ -95,7 +101,7 @@ export const DetailsButton = styled.button`
   font-weight: semibold;
   color: #ffffff;
   width: 620px;
-  margin-top: -100px;
+  margin-top: -50px;
   margin-left: 420px;
 
   &: hover {

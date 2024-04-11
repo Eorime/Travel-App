@@ -142,3 +142,23 @@ export const staysData = [
     price: "400$",
   },
 ];
+
+export const StarRating = ({ rating }) => {
+  const stars = [];
+  for (let i = 0; i < 5; i++) {
+    if (i < rating) {
+      stars.push(
+        <span key={i} style={{ fontSize: "40px", color: "#FF6700" }}>
+          &#9733;
+        </span>
+      );
+    } else {
+      stars.push(
+        <span key={i} style={{ fontSize: "40px", color: "#FF670060" }}>
+          &#9734;
+        </span>
+      );
+    }
+  }
+  return <div>{stars}</div>;
+};

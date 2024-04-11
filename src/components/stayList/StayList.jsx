@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { staysData } from "../../data/staysData/data";
+import { StarRating, staysData } from "../../data/staysData/data";
 import {
   Container,
   DetailsButton,
   Paragraph,
   PriceContainer,
+  RatingContainer,
   SeeMoreButton,
   StayContainer,
   StayDescription,
@@ -21,6 +22,7 @@ import { useNavigate } from "react-router-dom";
 
 const StayList = () => {
   const [showStays, setShowStays] = useState(false);
+
   const firstStays = 5;
 
   const navigate = useNavigate();
@@ -53,7 +55,9 @@ const StayList = () => {
               </StayTextContainer>
               <PriceContainer>
                 <Paragraph>Rating:</Paragraph>
-                <StayRating> {stay.rating}</StayRating>
+                <RatingContainer>
+                  <StarRating rating={stay.rating} />
+                </RatingContainer>
                 <Paragraph>Price:</Paragraph>
                 <StayPrice> {stay.price}</StayPrice>
               </PriceContainer>
