@@ -1,8 +1,15 @@
 import React from "react";
 import { AuthElement, Container, Line, StyledLink } from "./style";
 import { routes } from "../../constants/routes";
+import { useAuthentification } from "../../context/AuthentificationProvider";
 
 const AuthComponent = () => {
+  const { signOut } = useAuthentification();
+
+  const handleSignOut = () => {
+    signOut();
+  };
+
   return (
     <Container>
       <StyledLink to={routes.signIn}>
@@ -12,10 +19,10 @@ const AuthComponent = () => {
         <Line />
         <AuthElement>Sign up</AuthElement>
       </StyledLink>
-      <StyledLink to={routes.home}>
+      <StyledLink onClick={handleSignOut} to={routes.home}>
         <Line />
         <AuthElement>Sign out</AuthElement>
-      </StyledLink>{" "}
+      </StyledLink>
     </Container>
   );
 };
