@@ -6,7 +6,6 @@ import {
   OfferButton,
   SecondaryText,
 } from "./style";
-import VectorImage from "../../assets/images/Vector.png";
 
 const HomeIntro = () => {
   return (

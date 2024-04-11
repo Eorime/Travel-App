@@ -17,10 +17,10 @@ import {
 import { routes } from "../../constants/routes";
 import BurgerImg from "../../assets/images/burger.png";
 import CloseImage from "../../assets/images/close.png";
-import UserRegular from "../../assets/images/User.png";
+import User from "../../assets/images/Vector.png";
 import AuthComponent from "../authComponent/AuthComponent";
 
-const Header = () => {
+const HeaderScroll = () => {
   const [click, setClick] = useState(false);
   const [userClick, setUserClick] = useState(false);
 
@@ -46,7 +46,7 @@ const Header = () => {
         <StyledLink>
           <NavigateElement>Our offers</NavigateElement>
         </StyledLink>
-        <UserImage src={UserRegular} onClick={handleUserClick} />
+        <UserImage src={User} onClick={handleUserClick} />
         {userClick && <AuthComponent />}
       </NavigateElementsContainer>
       <StyledLink to={routes.home}>
@@ -90,4 +90,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderScroll;

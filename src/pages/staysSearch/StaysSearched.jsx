@@ -5,6 +5,7 @@ import { Container } from "./style";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import StaysSearchComponent from "../../components/staysSearchComponent/StaysSearchComponent";
+import StaysFilter from "../../components/staysFilter/StaysFilter";
 
 const StaysSearched = () => {
   return (
@@ -13,6 +14,7 @@ const StaysSearched = () => {
       <Container>
         <ServiceFilter />
         <StaysSearchComponent />
+        <StaysFilter />
       </Container>
       <Footer />
     </>
