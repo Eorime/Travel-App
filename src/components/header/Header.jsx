@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Burger,
   BurgerImage,
@@ -23,6 +23,12 @@ import AuthComponent from "../authComponent/AuthComponent";
 const Header = () => {
   const [click, setClick] = useState(false);
   const [userClick, setUserClick] = useState(false);
+  const [userImage, setUserImage] = useState(null);
+
+  useEffect(() => {
+    const imageUrl = localStorage.getItem("userImage");
+    setUserImage(imageUrl);
+  }, []);
 
   const clickHandle = () => setClick(!click);
 
@@ -46,7 +52,10 @@ const Header = () => {
         <StyledLink>
           <NavigateElement>Our offers</NavigateElement>
         </StyledLink>
-        <UserImage src={UserRegular} onClick={handleUserClick} />
+        <UserImage
+          src={userImage ? userImage : UserRegular}
+          onClick={handleUserClick}
+        />
         {userClick && <AuthComponent />}
       </NavigateElementsContainer>
       <StyledLink to={routes.home}>

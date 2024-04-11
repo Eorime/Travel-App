@@ -51,6 +51,9 @@ const SignUp = () => {
   const handleImageChange = (e) => {
     const imgFile = e.target.files[0];
     setImage(imgFile);
+
+    const imageUrl = URL.createObjectURL(imgFile);
+    localStorage.setItem("userImage", imageUrl);
   };
 
   const handleSubmitButton = async (e) => {

@@ -33,6 +33,7 @@ const AuthentificationProvider = ({ children }) => {
 
   const signOut = () => {
     localStorage.removeItem("user");
+    localStorage.removeItem("userImage");
     setUser(null);
   };
 
