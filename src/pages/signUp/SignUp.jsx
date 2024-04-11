@@ -55,10 +55,24 @@ const SignUp = () => {
 
   const handleSubmitButton = async (e) => {
     e.preventDefault();
+
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !password ||
+      !rePassword ||
+      !image
+    ) {
+      setError("Fill in all fields and upload an image");
+      return;
+    }
+
     if (password !== rePassword) {
       setError("Passwords don't match");
       return;
     }
+
     try {
       await signUp(firstName, lastName, email, password);
       navigate("/signin");
@@ -107,11 +121,42 @@ const SignUp = () => {
             onChange={(e) => setRePassword(e.target.value)}
             placeholder="Re-enter Password"
           />
-          <Label htmlFor="image">
+          <Label
+            htmlFor="image"
+            style={{
+              width: "100px",
+              height: "100px",
+              display: "inline-block",
+              position: "relative",
+            }}
+          >
             {image ? (
-              <UploadedImage src={URL.createObjectURL(image)} alt="Uploaded" />
+              <>
+                <UploadedImage
+                  src={URL.createObjectURL(image)}
+                  alt="Uploaded"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    zIndex: 1,
+                  }}
+                />
+                <ImageUploadIcon
+                  src={ImageUpload}
+                  alt="Upload"
+                  style={{ width: "100%", height: "100%", opacity: 0 }}
+                />
+              </>
             ) : (
-              <ImageUploadIcon src={ImageUpload} alt="Upload" />
+              <ImageUploadIcon
+                src={ImageUpload}
+                alt="Upload"
+                style={{ width: "100%", height: "100%", opacity: 1 }}
+              />
             )}
           </Label>
           <input
