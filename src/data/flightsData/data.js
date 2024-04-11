@@ -139,3 +139,42 @@ export const flightsData = [
     stops: 2,
   },
 ];
+
+export const CubeStops = ({ stops, size, color }) => {
+  const cubes = [];
+  for (let i = 0; i < 3; i++) {
+    if (i < stops) {
+      cubes.push(
+        <span
+          key={i}
+          style={{
+            display: "inline-block",
+            width: "15px",
+            height: "15px",
+            backgroundColor: "#DBDBDB",
+            outline: "1px solid #424244",
+            marginRight: "20px",
+            marginBottom: "30px",
+            marginLeft: "40px",
+          }}
+        ></span>
+      );
+    } else {
+      cubes.push(
+        <span
+          key={i}
+          style={{
+            display: "inline-block",
+            width: "15px",
+            height: "15px",
+            background: "transparent",
+            marginRight: "20px",
+            marginBottom: "30px",
+            marginLeft: "40px",
+          }}
+        ></span>
+      );
+    }
+  }
+  return <div>{cubes}</div>;
+};

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-left: 170px;
   margin-top: 365px;
+  margin-bottom: -550px;
 `;
 
 export const FlightsContainer = styled.div`
@@ -13,20 +14,24 @@ export const FlightsContainer = styled.div`
 export const Flight = styled.div`
   max-width: 100%;
   width: 1170px;
-  height: auto;
+  height: 160px;
   background-color: #ffffff;
   border-radius: 20px;
   margin-left: 400px;
   padding: 20px;
   color: #424244;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: -870px;
-  margin-top: 45px;
+  margin-left: 80px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  white-space: nowrap;
 `;
 
 export const FlightLogo = styled.img`
@@ -43,18 +48,23 @@ export const AirlineName = styled.h5`
 export const FlightTakeOff = styled.p`
   font-weight: 500;
   font-size: 24px;
+  margin-left: 90px;
+  margin-right: 70px;
+  margin-top: 92px;
 `;
 
 export const FlightLanding = styled.p`
   font-weight: 500;
   font-size: 24px;
+  margin-top: 92px;
+  margin-left: -75px;
 `;
 
 export const DealContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 880px;
-  margin-top: 44px;
+  margin-left: 60px;
+  margin-top: 3px;
 `;
 
 export const FlightPrice = styled.p`
@@ -79,6 +89,9 @@ export const ViewDeal = styled.button`
 export const FlightHours = styled.p`
   font-size: 24px;
   color: #42424460;
+  margin-top: 92px;
+  white-space: nowrap;
+  margin-left: 30px;
 `;
 
 export const SeeMoreButton = styled.button`
@@ -104,4 +117,32 @@ export const Line = styled.div`
   width: 173px;
   margin-top: -2px;
   margin-bottom: 20px;
+`;
+
+export const StopsContainer = styled.div`
+  margin-top: 100px;
+  margin-left: -40px;
+`;
+
+export const StopLine = styled.div`
+  width: 200px;
+  height: 2px;
+  background-color: #c85100;
+  margin-top: -42px;
+`;
+
+export const TakeOffP = styled.p`
+  font-size: 24px;
+  color: #424244;
+  white-space: nowrap;
+  margin-top: 40px;
+  margin-right: -160px;
+  margin-left: 80px;
+`;
+
+export const LandingP = styled.p`
+  font-size: 24px;
+  color: #424244;
+  white-space: nowrap;
+  margin-top: 40px;
 `;

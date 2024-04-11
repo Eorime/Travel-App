@@ -10,16 +10,22 @@ import {
   FlightPrice,
   FlightTakeOff,
   FlightsContainer,
+  LandingContainer,
+  LandingP,
   Line,
   LogoContainer,
   SeeMoreButton,
+  StopLine,
+  StopsContainer,
+  TakeOffP,
   ViewDeal,
 } from "./style";
-import { flightsData } from "../../data/flightsData/data";
+import { CubeStops, flightsData } from "../../data/flightsData/data";
+import { TakeOffParagraph1 } from "../filterFlights/style";
 
 const FlightsFilter = () => {
   const [showFlights, setShowFlights] = useState(false);
-  const firstFlights = 5;
+  const firstFlights = 8;
 
   const showMore = () => {
     setShowFlights(true);
@@ -40,8 +46,14 @@ const FlightsFilter = () => {
                 <FlightLogo src={flight.img} />
                 <AirlineName>{flight.airlinesName}</AirlineName>
               </LogoContainer>
-              <FlightTakeOff>Take off {flight.takeOff}</FlightTakeOff>
-              <FlightLanding>Landing {flight.landing}</FlightLanding>
+              <TakeOffP>Take off</TakeOffP>
+              <FlightTakeOff>{flight.takeOff}</FlightTakeOff>
+              <StopsContainer>
+                <CubeStops stops={flight.stops} />
+                <StopLine></StopLine>
+              </StopsContainer>
+              <LandingP>Landing</LandingP>
+              <FlightLanding> {flight.landing}</FlightLanding>
               <FlightHours>{flight.hours}</FlightHours>
               <DealContainer>
                 <FlightPrice>

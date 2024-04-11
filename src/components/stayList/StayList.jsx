@@ -12,7 +12,6 @@ import {
   StayImage,
   StayLocation,
   StayPrice,
-  StayRating,
   StaySubtitle,
   StayTextContainer,
   StayTitle,
