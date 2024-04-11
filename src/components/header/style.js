@@ -49,17 +49,38 @@ export const NavigationContainer = styled.div`
   }
 `;
 
-export const NavigateElement = styled.p``;
+export const NavigateElementsContainer = styled.div`
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  color: #424244;
+  font-size: 28px;
+  margin-top: -10px;
+  margin-left: 940px;
+  font-weight: 500;
+`;
+
+export const NavigateElement = styled.p`
+  margin-right: 40px;
+`;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
 `;
 
-export const UserImage = styled.img``;
+export const UserImage = styled.img`
+  height: 40px;
+  width: 40px;
+  margin-top: 25px;
+
+  &: hover {
+    cursor: pointer;
+  }
+`;
 
 export const Burger = styled.div`
-  display: flex;
+  display: none;
   position: fixed;
   right: 30px;
   width: 32px;

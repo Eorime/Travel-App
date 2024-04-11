@@ -9,6 +9,7 @@ import {
   Line,
   MenuItem,
   NavigateElement,
+  NavigateElementsContainer,
   NavigationContainer,
   StyledLink,
   UserImage,
@@ -17,14 +18,38 @@ import { routes } from "../../constants/routes";
 import BurgerImg from "../../assets/images/burger.png";
 import CloseImage from "../../assets/images/close.png";
 import User from "../../assets/images/Vector.png";
+import UserRegular from "../../assets/images/User.png";
+import AuthComponent from "../authComponent/AuthComponent";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+  const [userClick, setUserClick] = useState(false);
 
   const clickHandle = () => setClick(!click);
 
+  const handleUserClick = () => setUserClick(!userClick);
+
   return (
     <HeaderContainer>
+      <NavigateElementsContainer>
+        <StyledLink to={routes.home}>
+          <NavigateElement>Home</NavigateElement>
+        </StyledLink>
+        <StyledLink>
+          <NavigateElement>About Us</NavigateElement>
+        </StyledLink>
+        <StyledLink>
+          <NavigateElement>Blogs</NavigateElement>
+        </StyledLink>
+        <StyledLink to={routes.services}>
+          <NavigateElement>Our services</NavigateElement>
+        </StyledLink>
+        <StyledLink>
+          <NavigateElement>Our offers</NavigateElement>
+        </StyledLink>
+        <UserImage src={UserRegular} onClick={handleUserClick} />
+        {userClick && <AuthComponent />}
+      </NavigateElementsContainer>
       <StyledLink to={routes.home}>
         <HeaderTitle>ExploreEra</HeaderTitle>
       </StyledLink>
