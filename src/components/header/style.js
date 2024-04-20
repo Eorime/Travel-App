@@ -14,9 +14,13 @@ export const HeaderContainer = styled.div`
   color: #ffffff;
   background-color: #eae9e9;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     max-width: 100%;
     background-color: transparent;
+  }
+
+  @media screen and (max-width: 1500px) {
+    height: 85px;
   }
 `;
 
@@ -28,10 +32,16 @@ export const HeaderTitle = styled.h1`
   margin-top: 20px;
   color: #424244;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     font-size: 24px;
     margin-left: 30px;
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 32px;
+    margin-left: 45px;
+    color: #424244;
   }
 `;
 
@@ -44,7 +54,7 @@ export const NavigationContainer = styled.div`
   height: 100%;
   padding: 0 1rem;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     max-width: 100%;
   }
 `;
@@ -58,6 +68,13 @@ export const NavigateElementsContainer = styled.div`
   margin-top: -10px;
   margin-left: 940px;
   font-weight: 500;
+
+  @media screen and (max-width: 1500px) {
+    font-size: 18px;
+    margin-left: 720px;
+    margin-top: -8px;
+    color: #424244;
+  }
 `;
 
 export const NavigateElement = styled.p`
@@ -76,6 +93,13 @@ export const UserImage = styled.img`
 
   &: hover {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1500px) {
+    height: 30px;
+    width: 30px;
+    margin-top: 12px;
+    color: #424244;
   }
 `;
 
