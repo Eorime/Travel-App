@@ -115,7 +115,7 @@ export const Burger = styled.div`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     display: block;
   }
 `;
@@ -127,7 +127,7 @@ export const BurgerMenu = styled.ul`
   display: flex;
   position: relative;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     padding-left: 28px;
     position: fixed;
     right: 2.5rem;
@@ -155,13 +155,13 @@ export const MenuItem = styled.li`
   color: #424244;
   z-index: 1000;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     margin: ;
   }
 `;
 
 export const Line = styled.div`
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     background-color: #424244;
     height: 1px;
     width: 70%;

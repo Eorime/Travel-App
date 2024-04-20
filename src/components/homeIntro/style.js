@@ -27,10 +27,16 @@ export const Content = styled.div`
   left: 800px;
   font-weight: 300;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     margin-top: 45px;
     position-absolute;
     left: 160px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    margin-top: 175px;
+    position-absolute;
+    left: 580px;
   }
 `;
 
@@ -40,16 +46,24 @@ export const MainText = styled.h1`
   font-weight: 500;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     font-size: 24px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 48px;
   }
 `;
 
 export const SecondaryText = styled.p`
   font-size: 40px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 24px;
   }
 `;
 
@@ -71,12 +85,21 @@ export const OfferButton = styled.button`
     cursor: pointer;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     font-size: 16px;
     width: 105px;
     height: 35px;
     padding-top: 8px;
     padding-bottom: 8px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 1500px) {
+    font-size: 20px;
+    width: 140px;
+    height: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 10px;
   }
 `;
