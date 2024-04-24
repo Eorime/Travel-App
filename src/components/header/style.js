@@ -66,12 +66,12 @@ export const NavigateElementsContainer = styled.div`
   color: #424244;
   font-size: 28px;
   margin-top: -10px;
-  margin-left: 940px;
+  margin-left: 1200px;
   font-weight: 500;
 
   @media screen and (max-width: 1500px) {
     font-size: 18px;
-    margin-left: 720px;
+    margin-left: 880px;
     margin-top: -8px;
     color: #424244;
   }

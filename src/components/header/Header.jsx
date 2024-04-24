@@ -40,18 +40,16 @@ const Header = () => {
         <StyledLink to={routes.home}>
           <NavigateElement>Home</NavigateElement>
         </StyledLink>
-        <StyledLink>
-          <NavigateElement>About Us</NavigateElement>
+        <StyledLink to={routes.stays}>
+          <NavigateElement>Stays</NavigateElement>
         </StyledLink>
-        <StyledLink>
-          <NavigateElement>Blogs</NavigateElement>
+        <StyledLink to={routes.flights}>
+          <NavigateElement>Flights</NavigateElement>
         </StyledLink>
         <StyledLink to={routes.services}>
           <NavigateElement>Our services</NavigateElement>
         </StyledLink>
-        <StyledLink>
-          <NavigateElement>Our offers</NavigateElement>
-        </StyledLink>
+
         <UserImage
           src={userImage ? userImage : UserRegular}
           onClick={handleUserClick}

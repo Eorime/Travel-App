@@ -10,7 +10,6 @@ import {
   MainTitle,
   Paragraph,
   ParagraphTitle,
-  SeeAll,
   TheMainParagraph,
 } from "./style";
 
@@ -24,13 +23,12 @@ const DiscoverServices = () => {
         destination selection, flight and accommodation <br></br> bookings, and
         customized itineraries to individual preferences.
       </TheMainParagraph>
-      <SeeAll>see all</SeeAll>
       <Container>
         <ElementContainer>
           <ImageContainer src={BookFlights} />
           <ParagraphTitle>Book Flight</ParagraphTitle>
           <Paragraph>
-            Book memorable journey with our flight booking <br></br>services!
+            Book a memorable journey with our flight booking <br></br>services!
             we're thrilled to present you <br></br>flight options to suit your
             travel needs.
           </Paragraph>
@@ -39,8 +37,8 @@ const DiscoverServices = () => {
           <ImageContainer src={BookHotels} />
           <ParagraphTitle>Book Hotels</ParagraphTitle>
           <Paragraph>
-            Book memorable journey with our flight booking <br></br> services!
-            we're thrilled to present you flight <br></br> options to suit your
+            Book a memorable journey with our flight booking <br></br> services!
+            We're thrilled to present you flight <br></br> options to suit your
             travel needs.
           </Paragraph>
         </ElementContainer>
